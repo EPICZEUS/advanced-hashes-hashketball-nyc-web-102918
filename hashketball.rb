@@ -122,7 +122,7 @@ def num_points_scored(player)
   game_hash.find do |key, val|
 #    binding.pry
     val[:players].has_key?(player)
-  end[player][:points]
+  end[:players][player][:points]
 end
 
 
