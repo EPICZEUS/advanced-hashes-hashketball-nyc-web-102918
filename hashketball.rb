@@ -129,10 +129,7 @@ def player_stats(player)
 end
   
 def num_points_scored(player)
-  game_hash.each do |key, val|
-#    binding.pry
-    val[:players].has_key?(player)
-  end[:players][player][:points]
+  player_stats[:points]
 end
 
 
