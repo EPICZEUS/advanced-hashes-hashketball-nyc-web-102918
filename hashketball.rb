@@ -140,6 +140,7 @@ def team_colors(team)
   game_hash.find do |key, val|
     val[:team_name] == team
   end[:team_colors]
+end
 
 
 
