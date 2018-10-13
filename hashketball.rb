@@ -116,7 +116,10 @@ def game_hash
   }
 end
 
-
+def num_points_scored(player)
+  game_hash.find do |key, val|
+    val[:players].has_key?(player)
+  end[:points]
 
 
 
