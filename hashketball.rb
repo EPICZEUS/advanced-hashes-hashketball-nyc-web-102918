@@ -129,7 +129,7 @@ def player_stats(player)
 end
   
 def num_points_scored(player)
-  player_stats[:points]
+  player_stats(player)[:points]
 end
 
 
