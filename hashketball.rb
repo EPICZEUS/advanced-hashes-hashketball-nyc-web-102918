@@ -118,8 +118,18 @@ def game_hash
   }
 end
 
+def player_stats(player)
+  out = nil
+  game_hash.each do |key, val|
+    if val[:players].has_key?(player)
+      out = val[:players][player]
+    end
+  end
+  out
+end
+  
 def num_points_scored(player)
-  game_hash.find do |key, val|
+  game_hash.each do |key, val|
 #    binding.pry
     val[:players].has_key?(player)
   end[:players][player][:points]
