@@ -139,7 +139,7 @@ end
 def team_colors(team)
   puts game_hash.find do |key, val|
     val[:team_name] == team
-  end.inspect
+  end.first[:team_colors]
 end
 
 team_colors("Brooklyn Nets")
