@@ -132,7 +132,14 @@ def num_points_scored(player)
   player_stats(player)[:points]
 end
 
+def shoe_size(player)
+  player_stats(player)[:shoe_size]
+end
 
+def team_colors(team)
+  game_hash.find do |key, val|
+    val[:team_name] == team
+  end[:team_colors]
 
 
 
